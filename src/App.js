@@ -61,7 +61,14 @@ const App = () => {
     return date
   }
 
-  
+  const getDomainFromUrl = url => {
+   
+    if (url === undefined || url === 'undefined' ) return 'nobody'
+
+    const subStr = url.split('/')
+
+    return subStr[2]
+  }
  
   return (
     <div className="App">
@@ -79,6 +86,7 @@ const App = () => {
             time={convertTime(newsItem.time)}
             descendants={newsItem.descendants}
             id={newsItem.id}
+            getDomainFromUrl={getDomainFromUrl}
             />
           })
         }
