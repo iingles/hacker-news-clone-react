@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .App {
+        max-width: 85%;
+        margin: 0 auto;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+        font-size: 1.33rem;
+
+        .d-flex {
+            display: flex;
+        }
+
+        .news-list {
+            padding: 1rem;
+            background: #F6F6EF;
+        }
+    }
+}
